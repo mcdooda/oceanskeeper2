@@ -1,0 +1,50 @@
+=== Commands ===
+
+Move using ZQSD or the arrows
+Fire with ctrl (left or right)
+Bomb with space
+
+=== Developers of Ocean's Keeper 2 ===
+
+- Code by Nikaulus
+    http://sourceforge.net/users/nikaulus
+
+- Graphics by Molokov
+    http://tom.rouillard.net/
+
+=== External resources ===
+
+- Thanks to CyborgJeff for his free music
+    http://cyborgjeff.untergrund.net/
+    Listen to the full album on Jamendo: http://www.jamendo.com/fr/album/22103
+
+- Thanks to the lua team for Lua
+    http://lua.org/
+
+- Thanks to Laurent Gomila for SMFL
+    http://sfml-dev.org/
+
+- Thanks to the glew team for GLEW
+    http://glew.sf.net/
+
+=== How to compile ===
+
+- On linux with the command line:
+    Install cmake, lua, sfml
+    For example on debian-based systems:
+        $ su
+        # apt-get install cmake liblua5.1-dev libsfml-dev libglew1.5-dev
+
+    Create a Makefile using cmake:
+        $ cd <oceanskeeper2 directory>/
+        $ cmake . -G "Unix Makefiles"
+        $ make
+
+    Then, run the game:
+        $ ./oceanskeeper2
+
+- Using codeblocks
+    Open the codeblocks project oceanskeeper2.cbp
+    Configure it for Lua 5.1, GLEW and SFML 1.6
+    Build!
+    

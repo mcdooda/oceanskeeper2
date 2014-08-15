@@ -4,13 +4,15 @@ project(oceanskeeper2)
 
 file(
     GLOB_RECURSE
-    sources
-    sources/*
+    src
+    src/*
 )
+
+set(CMAKE_CXX_FLAGS "-g -Wall")
 
 add_executable(
     oceanskeeper2
-    ${sources}
+    ${src}
 )
 
 target_link_libraries(
